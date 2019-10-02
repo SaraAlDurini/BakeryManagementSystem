@@ -20,12 +20,12 @@ String Query
 
 File file
 
-// Get Bakery Code Dose not have bank account then save it in BakeryDosenotHaveBankAccount
-Query = 'select * from base_bakery where BAKERY_CODE not in (select bakery_code from bakery_ach_data) and base_bakery.governorate_code=03'
+// Get Bakery Code which have bank account then save it in BakeryHaveBankAccount
+Query = 'select * from base_bakery where BAKERY_CODE in (select bakery_code from bakery_ach_data) and base_bakery.governorate_code=03'
 
 println(Query)
 
-CustomKeywords.'dataBaseConnection.GetOracleQueryResult.conectsql'('bdistribute', '12345678', Query, 'C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\BakeryDosenotHaveBankAccount.txt')
+CustomKeywords.'dataBaseConnection.GetOracleQueryResult.conectsql'('bdistribute', '12345678', Query, 'C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\BakeryHaveBankAccount.txt')
 
 // read  User name from CSV then save it  in cash 
 file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ValidUserName.txt')

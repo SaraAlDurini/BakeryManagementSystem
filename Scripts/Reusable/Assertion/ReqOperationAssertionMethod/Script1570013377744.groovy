@@ -13,17 +13,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+String Query
+
+String ExpectedResult
 File file
 
-// Get the Backary code from cash file 
- file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryDosenotHaveBankAccount.txt')
-String BakeryDosenotHaveBankAccount = file.readLines()
-println (BakeryDosenotHaveBankAccount)
 
-// set the Backary code in searsh field 
-WebUI.setText(findTestObject('Object Repository/CreateMdifyBankAcc/Page_/input_ _formj_idt33'), BakeryDosenotHaveBankAccount)
+// Save the Req code in Cash
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\ReqCode.txt')
 
 
-// Click on إستعلام
-WebUI.click(findTestObject('Object Repository/CreateMdifyBankAcc/Page_/span_ (1)'))
+// Write your Get query in Query =
+// Example of Select Query
+Query = ((('SELECT REQ_OPERATION FROM REQUESTS WHERE REQ_CODE = ' + '\'') + 'ReqCode') + '\'')
+
+
+// 
+ExpectedResult = 'UPD'
+
+
+// Call the cnnection (UserName , Password , Query , The Expected Result to copare it with actual query result  )
+CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult)
 
