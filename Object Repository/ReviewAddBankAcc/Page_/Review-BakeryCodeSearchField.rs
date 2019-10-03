@@ -6,18 +6,18 @@
    <elementGuidId>8b96d209-02ce-4501-a2cf-c31fe280ccb9</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'form:j_idt34' and @type = 'text' and @class = 'ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@id='cardForm:j_idt32']</value>
       </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//input[@id = 'cardForm:j_idt32' and @name = 'cardForm:j_idt32' and @type = 'text']</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -28,10 +28,10 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>cardForm:j_idt32</value>
+      <value>form:j_idt34</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
@@ -66,11 +66,11 @@
       <value>this.value = this.value.trim()</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control ui-state-hover ui-state-focus</value>
+      <value>ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

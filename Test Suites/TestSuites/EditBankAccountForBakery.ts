@@ -11,10 +11,10 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>5aa17896-2bf7-4ea2-9d86-224a2cb66954</testSuiteGuid>
    <testCaseLink>
-      <guid>62e7394a-1d8a-45a6-a959-7c6b740d8580</guid>
+      <guid>75ed11fd-99ee-4f2b-b67c-91efcb814c27</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/General/GetData/AddBakeryBankAccountGetData</testCaseId>
+      <testCaseId>Test Cases/General/GetData/EditBakeryBankAccountGetData</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4798ddec-c05f-4a8e-a1ef-1e2a1cd5637b</guid>
@@ -35,10 +35,10 @@
       <testCaseId>Test Cases/General/OpenMethods/OpenCreateModifyBankAccountForBakeryTabMethod</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b3094d67-28a1-4b6b-aee4-94a1cf377cf0</guid>
+      <guid>85455db7-0e8f-4caf-b770-2bb9a5138094</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/SearchForBakeryCodeByDirectorateEmployee</testCaseId>
+      <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/SearchForBakeryCodeByCommodityEmployee-Edit</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8049ed45-6ff4-48e1-949d-2e40c15a55d4</guid>
@@ -59,6 +59,12 @@
       <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/ReviewByEBCMethod</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>c8b1bf35-7f5b-4daf-8bf6-d5b73d35b796</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Reusable/Assertion/ReqOperationAssertionMethod</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>c5054b5f-ec26-4c15-a79a-eb2441ecf3e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -75,12 +81,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/General/OpenMethods/OpenReviewTheCreationModificationofTheBankAccountForBakeryMethod</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>85455db7-0e8f-4caf-b770-2bb9a5138094</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/SearchForBakeryCodeByCommodityEmployee</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a746af11-956e-469a-aa40-e5d2ec43eed8</guid>
@@ -125,21 +125,15 @@
       <testCaseId>Test Cases/General/OpenMethods/OpenCreateModifyBankAccountForBakeryTabMethod</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f90325b0-ef6a-4577-aaa7-ff888ff90a70</guid>
+      <guid>e1231810-29c4-47f1-939e-dae3f1fa9c96</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/SearchForBakeryCodeByDirectorateEmployee</testCaseId>
+      <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/SearchForBakeryCodeByCommodityEmployee-Edit</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2ec27297-f5fd-4cd4-ba02-b5f0966cfb15</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Reusable/Assertion/CanAccessBankAccontTabAssertionMethod</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e77fec43-3930-4e2a-90f9-94f8937ef274</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/General/CloseMethod/CloseBrowserMethod</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

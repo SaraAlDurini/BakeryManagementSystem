@@ -6,11 +6,15 @@
    <elementGuidId>ac8ad47f-8080-4439-acf1-8ce7606f6088</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//span[@class = 'ui-button-text ui-c' and (text() = 'إستعلام' or . = 'إستعلام')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//button[@id='cardForm:j_idt34']/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +24,7 @@
       <value>span</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>

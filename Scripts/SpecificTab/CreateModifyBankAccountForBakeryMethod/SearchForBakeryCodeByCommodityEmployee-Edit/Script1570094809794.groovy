@@ -13,22 +13,18 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-File file
-String BakeryHaveBankAccount
+// Get the Backary code from cash file
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryHaveBankAccount.txt')
+
+String BakeryHaveBankAccount = file.readLines()
+
+//Remove any non-digits from a string
+BakeryHaveBankAccount = BakeryHaveBankAccount.replaceAll("[^\\d]", "" )
 
 
-// Get the Backary code from cash file 
- file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryHaveBankAccount.txt')
-BakeryHaveBankAccount = file.readLines()
-BakeryHaveBankAccount = BakeryHaveBankAccount.replaceAll('[^\\d]', '')
-
-
-println (BakeryHaveBankAccount)
-
-// set the Backary code in searsh field 
-WebUI.setText(findTestObject('Object Repository/CreateMdifyBankAcc/Page_/input_ _formj_idt33'), BakeryHaveBankAccount)
-
+// set the Backary code in searsh field
+WebUI.setText(findTestObject('ReviewAddBankAcc/Page_/Review-BakeryCodeSearchField'), BakeryHaveBankAccount)
 
 // Click on إستعلام
-WebUI.click(findTestObject('Object Repository/CreateMdifyBankAcc/Page_/span_ (1)'))
+WebUI.click(findTestObject('ReviewAddBankAcc/Page_/Review-SearchButton'))
 

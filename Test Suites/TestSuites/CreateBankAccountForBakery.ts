@@ -80,7 +80,7 @@
       <guid>85455db7-0e8f-4caf-b770-2bb9a5138094</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/SearchForBakeryCodeByCommodityEmployee</testCaseId>
+      <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/SearchForBakeryCodeByCommodityEmployee-Edit</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a746af11-956e-469a-aa40-e5d2ec43eed8</guid>

@@ -13,24 +13,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
 String Query
-String ExpectedResult
 File file
-String ReqCode
+String ExpectedResult_BAKERY_CODE
 
-// Save the Req code in Cash
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\ReqCode.txt')
+// Example of Expected result ' read from Cash '
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryHaveBankAccount.txt')
+ExpectedResult_BAKERY_CODE = file.readLines()
 
-// read the ReqCode from cah file and save it in string 
- ReqCode = file.readLines()
-
-
-// Get REQ_OPERATION by ReqCode
-Query = ((('SELECT REQ_OPERATION FROM REQUESTS WHERE REQ_CODE = ' + '\'') + 'ReqCode') + '\'')
-
-// Assert on REQ OPERATION = Update
-ExpectedResult = 'UPD'
+// Get and assert on BAKERY_NAME
+Query = ((('Select BAKERY_NAME from base_bakery where BAKERY_CODE = ' + '\'') + 'ExpectedResult_BAKERY_CODE') + '\'')
 
 // Call the cnnection (UserName , Password , Query , The Expected Result to copare it with actual query result  )
-CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult)
+CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult_BAKERY_CODE)
+
+
+// Get and assert on BAKERY_NAME
+Query = ((('Select BAKERY_NAME from base_bakery where BAKERY_CODE = ' + '\'') + 'ExpectedResult_BAKERY_CODE') + '\'')
+
+// Call the cnnection (UserName , Password , Query , The Expected Result to copare it with actual query result  )
+CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult_BAKERY_CODE)
 
