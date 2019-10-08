@@ -17,21 +17,35 @@ import internal.GlobalVariable as GlobalVariable
 String Query
 File file
 String ExpectedResult_BAKERY_CODE
+String ExpectedResult
 
-// Example of Expected result ' read from Cash '
+// Read BAKERY_CODE from Cash to execute the Query by this spesific code  
 file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryHaveBankAccount.txt')
 ExpectedResult_BAKERY_CODE = file.readLines()
 
+// ** Read BANK_ACC_NUMBER Cash to execute the Query by this spesific code
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ِAccNumber.txt')
+ExpectedResult = file.readLines()
+
+// Get and assert on BANK_ACC_NUMBER
+Query = ((('Select BANK_ACC_NUMBER from base_bakery where BAKERY_CODE = ' + '\'') + 'ExpectedResult_BAKERY_CODE') + '\'')
+
+// Call the cnnection (UserName , Password , Query , The Expected Result to compare it with actual query result  )
+CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult)
+
+//  ** Read BAKERY_NAME Cash to execute the Query by this spesific code
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ِAccName.txt')
+ExpectedResult = file.readLines()
+
 // Get and assert on BAKERY_NAME
 Query = ((('Select BAKERY_NAME from base_bakery where BAKERY_CODE = ' + '\'') + 'ExpectedResult_BAKERY_CODE') + '\'')
 
-// Call the cnnection (UserName , Password , Query , The Expected Result to copare it with actual query result  )
-CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult_BAKERY_CODE)
+// Call the cnnection (UserName , Password , Query , The Expected Result to compare it with actual query result  )
+CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult)
 
+// ** Get and assert on REMITTANCE_INFO
+Query = ((('Select REMITTANCE_INFO from base_bakery where BAKERY_CODE = ' + '\'') + 'REMITTANCE_INFO') + '\'')
 
-// Get and assert on BAKERY_NAME
-Query = ((('Select BAKERY_NAME from base_bakery where BAKERY_CODE = ' + '\'') + 'ExpectedResult_BAKERY_CODE') + '\'')
-
-// Call the cnnection (UserName , Password , Query , The Expected Result to copare it with actual query result  )
-CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult_BAKERY_CODE)
+// Call the cnnection (UserName , Password , Query , The Expected Result to compare it with actual query result  )
+CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, 'ملاحظات')
 
