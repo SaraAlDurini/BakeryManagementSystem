@@ -7,35 +7,28 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//li[@id = 'form:j_idt37:branch_2' and (text() = 'فرع الدقى (5)' or . = 'فرع الدقى (5)')]</value>
+         <value>//*[@id = 'form:j_idt38:branch_label']</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//li[@id='form:j_idt37:branch_2']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>li</value>
+      <value>div</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all ui-state-hover</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-label</name>
-      <type>Main</type>
-      <value>فرع الدقى (5)</value>
+      <value>ui-selectonemenu-trigger ui-state-default ui-corner-right</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -56,21 +49,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>form:j_idt37:branch_2</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>فرع الدقى (5)</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>id(&quot;form:j_idt37:branch_2&quot;)</value>
+      <value>form:j_idt38:branch_label</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

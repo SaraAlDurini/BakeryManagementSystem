@@ -6,11 +6,15 @@
    <elementGuidId>d60d2887-648f-4a74-b86a-4c763ecd01fe</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//textarea[@id = 'form:j_idt38:j_idt62' and @name = 'form:j_idt38:j_idt62']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//textarea[@id='form:j_idt37:j_idt61']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -24,14 +28,14 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>form:j_idt37:j_idt61</value>
+      <value>form:j_idt38:j_idt62</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>form:j_idt37:j_idt61</value>
+      <value>form:j_idt38:j_idt62</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

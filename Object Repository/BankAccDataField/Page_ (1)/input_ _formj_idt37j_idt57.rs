@@ -6,11 +6,15 @@
    <elementGuidId>6c043209-1b76-46ff-9db1-33ae37e980e2</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//input[@id = 'form:j_idt38:j_idt58' and @type = 'text']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@id='form:j_idt37:j_idt57']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -24,10 +28,10 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>form:j_idt37:j_idt57</value>
+      <value>form:j_idt38:j_idt58</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>

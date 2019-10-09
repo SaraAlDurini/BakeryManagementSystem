@@ -41,10 +41,10 @@
       <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/SearchForBakeryCodeByCommodityEmployee-Edit</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8049ed45-6ff4-48e1-949d-2e40c15a55d4</guid>
+      <guid>7e35562d-4cc9-401c-b8e8-211b507c6d70</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/EnterValidBankAccData</testCaseId>
+      <testCaseId>Test Cases/SpecificTab/CreateModifyBankAccountForBakeryMethod/EditValidBankAccData</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ca290040-814e-4b9d-acb0-94881dfc599d</guid>

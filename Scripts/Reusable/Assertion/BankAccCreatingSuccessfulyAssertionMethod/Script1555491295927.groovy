@@ -26,8 +26,11 @@ assert SuccessfulMessage.contains('تم التنفيذ بنجاح')
 //Remove any non-digits from a string 
 String ReqCode = SuccessfulMessage.replaceAll('[^\\d]', '')
 
+//  792
+println(ReqCode)
+
 // Save the Req code in Cash 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\ReqCode.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ReqCode.txt')
 
 file.write(ReqCode)
 

@@ -41,7 +41,9 @@ assert ActualReqCode.contains(FileData)
 //Get and assert on Actual Creation Date
 String ActualCreationDate = SplitArrResult[1]
 println(ActualCreationDate)
-assert ActualCreationDate == today.format('MM/dd/yyyy')
+
+// تم التغيير في تعديل بيانات بنكي من شهر-يوم-سنه الى يوم - شهر - سنه 
+assert ActualCreationDate == today.format('dd/MM/yyyy')
 
 
 //Get and assert on Actual bakery Name

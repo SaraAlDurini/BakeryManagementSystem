@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id = 'form:j_idt37:branch']</value>
+         <value>//li[contains(@data-label, 'فرع الدقى (5)')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,14 +21,14 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>li</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-selectonemenu ui-widget ui-state-default ui-corner-all dropdown_menu</value>
+      <value>ui-selectonemenu-label ui-inputfield ui-corner-all</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,11 +38,11 @@
       <value>id(&quot;form:j_idt37:branch&quot;)/div[@class=&quot;ui-selectonemenu-trigger ui-state-default ui-corner-right ui-state-hover&quot;]</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>form:j_idt37:branch</value>
+      <value>form:j_idt38:branch_label</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +50,13 @@
       <name>css</name>
       <type>Main</type>
       <value>div.ui-selectonemenu-trigger.ui-state-default.ui-corner-right.ui-state-hover > span.ui-icon.ui-icon-triangle-1-s.ui-c</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>data-label</name>
+      <type>Main</type>
+      <value>فرع الدقى (5)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

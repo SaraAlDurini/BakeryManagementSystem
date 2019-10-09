@@ -21,11 +21,14 @@ WebUI.click(findTestObject('BankAccDataField/Page_ (1)/span__ui-icon ui-icon-tri
 
 WebUI.click(findTestObject('BankAccDataField/Page_ (1)/li_   -'))
 
-WebUI.click(findTestObject('BankAccDataField/Page_ (1)/div__ui-SelectBranch'), FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.click(findTestObject('BankAccDataField/Page_ (1)/div__ui-SelectBranch'), FailureHandling.CONTINUE_ON_FAILURE)
 
+//>
+WebUI.click(findTestObject('BankAccDataField/Page_ (1)/li_ (DokkiBranch)'), FailureHandling.CONTINUE_ON_FAILURE)
+	
+
+// DokkiBranch
 WebUI.click(findTestObject('BankAccDataField/Page_ (1)/div__ui-SelectBranch'))
-
-WebUI.click(findTestObject('BankAccDataField/Page_ (1)/li_ (DokkiBranch)'))
 
 // acc numb , read it from cash , convert to string , Remove all punctuation marks 
 file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccNumber.txt')
