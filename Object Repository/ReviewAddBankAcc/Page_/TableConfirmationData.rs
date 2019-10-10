@@ -6,12 +6,12 @@
    <elementGuidId>32fdea6b-8191-463d-957e-a5b4f31489a3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='SaveForm:j_idt80']</value>
+         <key>BASIC</key>
+         <value>//table[@id = 'SaveForm:j_idt82' and @role = 'grid']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//table[@id = 'SaveForm:j_idt80' and @role = 'grid']</value>
+         <key>XPATH</key>
+         <value>//table[@id='SaveForm:j_idt80']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>SaveForm:j_idt80</value>
+      <value>SaveForm:j_idt82</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

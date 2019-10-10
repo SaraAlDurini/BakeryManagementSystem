@@ -83,10 +83,10 @@
       <testCaseId>Test Cases/General/OpenMethods/OpenReviewTheCreationModificationofTheBankAccountForBakeryMethod</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a746af11-956e-469a-aa40-e5d2ec43eed8</guid>
+      <guid>af50d8e0-0207-4d13-af6c-329db2abb2e9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Reusable/Assertion/ReviewBankAccountCreationByCommunityEmployeeAssertionMethod</testCaseId>
+      <testCaseId>Test Cases/Reusable/Assertion/ReviewBankAccountUpdateByCommunityEmployeeAssertionMethod</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8c8b8e56-3d2a-4848-a3cc-d646a116bfa2</guid>
@@ -135,5 +135,17 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Reusable/Assertion/CanAccessBankAccontTabAssertionMethod</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e3d560a8-4ceb-4a3f-8972-04847a47514a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Reusable/Assertion/UpdatedBankAccontDataAssertionMethod</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>632f54ec-4dc9-4c56-9f2d-f08a1652429f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/General/CloseMethod/CloseBrowserMethod</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

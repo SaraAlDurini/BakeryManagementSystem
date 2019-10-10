@@ -22,30 +22,33 @@ String ExpectedResult
 // Read BAKERY_CODE from Cash to execute the Query by this spesific code  
 file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryHaveBankAccount.txt')
 ExpectedResult_BAKERY_CODE = file.readLines()
+println(ExpectedResult_BAKERY_CODE)
 
 // ** Read BANK_ACC_NUMBER Cash to execute the Query by this spesific code
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ِAccNumber.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccNumber.txt')
 ExpectedResult = file.readLines()
+ExpectedResult = ExpectedResult.replaceAll("[^\\d]", "" )
 
 // Get and assert on BANK_ACC_NUMBER
-Query = ((('Select BANK_ACC_NUMBER from base_bakery where BAKERY_CODE = ' + '\'') + 'ExpectedResult_BAKERY_CODE') + '\'')
+Query = ((('Select BANK_ACC_NUMBER from bakery_ach_data where BAKERY_CODE = ' + '\'') + ExpectedResult_BAKERY_CODE.replaceAll("[^\\d]", "" )) + '\'')
 
-// Call the cnnection (UserName , Password , Query , The Expected Result to compare it with actual query result  )
-CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult)
+// Assert on AccNumber
+CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('bdistribute', '12345678', Query, ExpectedResult)
 
 //  ** Read BAKERY_NAME Cash to execute the Query by this spesific code
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ِAccName.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccName.txt')
 ExpectedResult = file.readLines()
+ExpectedResult = ExpectedResult.replaceAll("[^\\d]", "" )
 
 // Get and assert on BAKERY_NAME
-Query = ((('Select BAKERY_NAME from base_bakery where BAKERY_CODE = ' + '\'') + 'ExpectedResult_BAKERY_CODE') + '\'')
+Query = ((('Select BANK_ACC_NAME from bakery_ach_data where BAKERY_CODE = ' + '\'') + ExpectedResult_BAKERY_CODE) + '\'')
 
 // Call the cnnection (UserName , Password , Query , The Expected Result to compare it with actual query result  )
-CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, ExpectedResult)
+CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('bdistribute', '12345678', Query, ExpectedResult)
 
 // ** Get and assert on REMITTANCE_INFO
-Query = ((('Select REMITTANCE_INFO from base_bakery where BAKERY_CODE = ' + '\'') + 'REMITTANCE_INFO') + '\'')
+Query = ((('Select REMITTANCE_INFO from bakery_ach_data where BAKERY_CODE = ' + '\'') + 'REMITTANCE_INFO') + '\'')
 
 // Call the cnnection (UserName , Password , Query , The Expected Result to compare it with actual query result  )
-CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('SupplyCard', 'smart999', Query, 'ملاحظات')
+CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('bdistribute', '12345678', Query, 'ملاحظات')
 

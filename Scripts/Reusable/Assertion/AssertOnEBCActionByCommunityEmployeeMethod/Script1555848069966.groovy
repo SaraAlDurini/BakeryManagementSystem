@@ -40,6 +40,7 @@ EBCTableData = WebUI.getText(findTestObject('ReviewAddBankAcc/Page_/TableConfirm
 
 // Split the data on each new line 
 String[] SplitArrResult = EBCTableData.split('\n')
+println(SplitArrResult)
 
 //SplitArrResult : [حالة مراجعة الحساب البنكى, تمت المراجعة, نتيجة مراجعة أسم الحساب, صحيح, نتيجة مراجعة رقم الحساب, صحيح] = [5,4,3,2,1,0 ]
 // Verify each displayed element by actual action " EBC action " 

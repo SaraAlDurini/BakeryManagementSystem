@@ -13,7 +13,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-
 File file
 String FileText
 
@@ -45,7 +44,7 @@ file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\
 WebUI.setText(findTestObject('BankAccDataField/Page_ (1)/input_   _formj_idt37j_idt59'),file.readLines().toString().replaceAll("\\p{P}",""))
 
 // Note
-WebUI.setText(findTestObject('BankAccDataField/Page_ (1)/textarea_ _formj_idt37j_idt61'), 'ملاحظات', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('BankAccDataField/Page_ (1)/textarea_ _formj_idt37j_idt61'), '222ملاحظات', FailureHandling.CONTINUE_ON_FAILURE)
 
 // Button click 
 WebUI.click(findTestObject('BankAccDataField/Page_ (1)/span__1'))
