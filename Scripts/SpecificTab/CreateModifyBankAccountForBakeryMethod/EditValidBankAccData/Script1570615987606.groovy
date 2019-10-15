@@ -15,6 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 
 File file
 String FileText
+int RandomNum
+RandomNum = (int)(Math.random()*5000)
 
 WebUI.click(findTestObject('BankAccDataField/Page_ (1)/span__ui-icon ui-icon-triangle-1-s ui-c_1-Select'))
 
@@ -44,7 +46,7 @@ file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\
 WebUI.setText(findTestObject('BankAccDataField/Page_ (1)/input_   _formj_idt37j_idt59'),file.readLines().toString().replaceAll("\\p{P}",""))
 
 // Note
-WebUI.setText(findTestObject('BankAccDataField/Page_ (1)/textarea_ _formj_idt37j_idt61'), '222ملاحظات', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('BankAccDataField/Page_ (1)/textarea_ _formj_idt37j_idt61'), 'ملاحظات'+RandomNum +'', FailureHandling.CONTINUE_ON_FAILURE)
 
 // Button click 
 WebUI.click(findTestObject('BankAccDataField/Page_ (1)/span__1'))

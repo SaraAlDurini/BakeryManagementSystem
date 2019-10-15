@@ -17,11 +17,10 @@ import sun.swing.BakedArrayList as BakedArrayList
 import org.openqa.selenium.Keys as Keys
 
 String Query
-
 File file
 
 // Get Bakery Code which have bank account then save it in Bakery Have Bank Account
-Query = ((((('Select * from base_bakery b inner join bakery_ach_data ach on b.BAKERY_CODE = ach.bakery_code  where b.governorate_code=90 and b.BAKERY_CODE not in(select BAKERY_CODE from REQ_BAKERY_ACH_DATA rbb,Requests r where rbb.REQ_CODE = r.REQ_CODE and r.REQ_CHANNEL=' + '\'') + 'BAKERY_ACC') + '\' and r.REQ_STATUS = ' + '\'') + 'FR_APRV') + '\'and r.APP_TYPE=1) ')
+Query = ((((('Select * from base_bakery b inner join bakery_ach_data ach on b.BAKERY_CODE = ach.bakery_code  where b.governorate_code=03 and b.BAKERY_CODE not in(select BAKERY_CODE from REQ_BAKERY_ACH_DATA rbb,Requests r where rbb.REQ_CODE = r.REQ_CODE and r.REQ_CHANNEL=' + '\'') + 'BAKERY_ACC') + '\' and r.REQ_STATUS = ' + '\'') + 'FR_APRV') + '\'and r.APP_TYPE=1) ')
 println(Query)
 
 CustomKeywords.'dataBaseConnection.GetOracleQueryResult.conectsql'('bdistribute', '12345678', Query, 'C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryHaveBankAccount.txt')
