@@ -18,7 +18,7 @@ File file
 String BackeryCode
 
 // Get the Backary code from cash file
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\GetBackeryCode.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\GetBackeryCode.txt')
 
 BackeryCode = file.readLines()
 
@@ -30,5 +30,5 @@ println(BackeryCode)
 WebUI.setText(findTestObject('CreateIncreaseInsuranceCouta/Page_/input_ _formj_idt34'), BackeryCode)
 
 // Click on إستعلام
-WebUI.click(findTestObject('Object Repository/CreateMdifyBankAcc/Page_/span_ (1)'))
+WebUI.click(findTestObject('IncreaseInsuranceBagsCouta/span_ (1)'))
 

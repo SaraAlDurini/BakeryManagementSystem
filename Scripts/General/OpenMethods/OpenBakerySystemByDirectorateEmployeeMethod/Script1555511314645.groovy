@@ -25,10 +25,10 @@ WebUI.navigateToUrl('http://81.29.102.138:7001/bakeriessystem/login.jsf')
 WebUI.maximizeWindow()
 
 // read valid user name from CSV
-WebUI.setText(findTestObject('Object Repository/Login/Page_/input__username'), findTestData('BakeryDataFileDirectorateAndCommodityEmployee').getValue(1, 1))
+WebUI.setText(findTestObject('Object Repository/Login/Page_/input__username'), findTestData('BakeryDataFileDirectorateAndCommodityEmployee').getValue(11, 1))
 
 // read valid password from CSV ,encrypted password : '4nvbrPglk7k='
-WebUI.setEncryptedText(findTestObject('Object Repository/Login/Page_/input__password'),  findTestData('BakeryDataFileDirectorateAndCommodityEmployee').getValue(2, 1))
+WebUI.setEncryptedText(findTestObject('Object Repository/Login/Page_/input__password'),  findTestData('BakeryDataFileDirectorateAndCommodityEmployee').getValue(12, 1))
 
 // Click on login button
 WebUI.click(findTestObject('Object Repository/Login/Page_/span_'))

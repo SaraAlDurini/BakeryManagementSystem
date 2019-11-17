@@ -22,5 +22,5 @@ String Query
 Query = 'select * from base_bakery where BAKERY_CODE not in (select bakery_code from bakery_ach_data) and base_bakery.governorate_code=03'
 
 // Call the connection (UserName , Password , Query , The cash file to save the query result on it )
-CustomKeywords.'dataBaseConnection.GetOracleQueryResult.conectsql'('SupplyCard', 'smart999', Query,"GetQueryResult.txt")
+CustomKeywords.'dataBaseConnection.GetOracleQueryResult.conectsql'('bdistribute', '12345678', Query,"GetQueryResult.txt")
 

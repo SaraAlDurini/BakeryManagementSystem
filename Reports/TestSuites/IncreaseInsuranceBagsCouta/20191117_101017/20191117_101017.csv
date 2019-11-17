@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+IncreaseInsuranceBagsCouta,Chrome 77.0.3865.90,,2019-11-17 10:10:21,2019-11-17 10:10:44,23.388s,ERROR
+,,,,,,
+Test Cases/General/GetData/IncreaseInsuranceCoutaGetData,Chrome 77.0.3865.90,,2019-11-17 10:10:22,2019-11-17 10:10:27,5.273s,PASSED
+Query = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 77.0.3865.90,,2019-11-17 10:10:23,2019-11-17 10:10:23,0.002s,PASSED
+"Query = ""select * from base_bakery b inner join bakery_ach_data ach on b.BAKERY_CODE = ach.bakery_code where b.governorate_code=03 and b.status=0 and b.BAKERY_CODE not in( select BAKERY_CODE from REQ_BAKERY_ACH_DATA rbb,Requests r where rbb.REQ_CODE = r.REQ_CODE and r.REQ_CHANNEL="" + ""'"" + ""BAKERY_ACC"" + ""' and r.REQ_STATUS ="" + ""'"" + ""FR_APRV"" + ""' and r.APP_TYPE=1);""",Chrome 77.0.3865.90,,2019-11-17 10:10:23,2019-11-17 10:10:23,0.002s,PASSED
+"dataBaseConnection.GetOracleQueryResult.conectsql(""SupplyCard"", ""smart999"", Query, ""GetBackeryCode.txt"")",Chrome 77.0.3865.90,,2019-11-17 10:10:23,2019-11-17 10:10:26,2.762s,PASSED
+file = new java.io.File(C:\Users\smart\Katalon Studio\BakeryManagementSystem.Share\Cash\ValidUserName.txt),Chrome 77.0.3865.90,,2019-11-17 10:10:26,2019-11-17 10:10:26,0.015s,PASSED
+"file.write(findTestData(""BakeryDataFileDirectorateAndCommodityEmployee"").getValue(11, 1))",Chrome 77.0.3865.90,,2019-11-17 10:10:26,2019-11-17 10:10:27,1.416s,PASSED
+file = new java.io.File(C:\Users\smart\Katalon Studio\BakeryManagementSystem.Share\Cash\ValidPassword.txt),Chrome 77.0.3865.90,,2019-11-17 10:10:27,2019-11-17 10:10:27,0.001s,PASSED
+"file.write(findTestData(""BakeryDataFileDirectorateAndCommodityEmployee"").getValue(12, 1))",Chrome 77.0.3865.90,,2019-11-17 10:10:27,2019-11-17 10:10:27,0.081s,PASSED
+,,,,,,
+Test Cases/General/OpenMethods/OpenBakerySystemByDirectorateEmployeeMethod,Chrome 77.0.3865.90,,2019-11-17 10:10:27,2019-11-17 10:10:43,16.341s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,2019-11-17 10:10:28,2019-11-17 10:10:35,7.700s,PASSED
+"navigateToUrl(""http://81.29.102.138:7001/bakeriessystem/login.jsf"")",Chrome 77.0.3865.90,,2019-11-17 10:10:35,2019-11-17 10:10:38,2.716s,PASSED
+maximizeWindow(),Chrome 77.0.3865.90,,2019-11-17 10:10:38,2019-11-17 10:10:42,4.168s,PASSED
+"setText(findTestObject(""Object Repository/Login/Page_/input__username""), findTestData(""BakeryDataFileDirectorateAndCommodityEmployee"").getValue(1, 1))",Chrome 77.0.3865.90,,2019-11-17 10:10:42,2019-11-17 10:10:43,0.398s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login/Page_/input__password""), findTestData(""BakeryDataFileDirectorateAndCommodityEmployee"").getValue(2, 1))",Chrome 77.0.3865.90,,2019-11-17 10:10:43,2019-11-17 10:10:43,0.314s,PASSED
+"click(findTestObject(""Object Repository/Login/Page_/span_""))",Chrome 77.0.3865.90,,2019-11-17 10:10:43,2019-11-17 10:10:43,0.413s,PASSED
+waitForPageLoad(3),Chrome 77.0.3865.90,,2019-11-17 10:10:43,2019-11-17 10:10:43,0.134s,PASSED
+,,,,,,
+Test Cases/General/OpenMethods/OpenCreateIncreaseInsuranceQuotaTapMethod,Chrome 77.0.3865.90,,2019-11-17 10:10:43,2019-11-17 10:10:44,0.553s,PASSED
+"navigateToUrl(""http://81.29.102.138:7001/bakeriessystem/manager/BakeryQuota.jsf"")",Chrome 77.0.3865.90,,2019-11-17 10:10:44,2019-11-17 10:10:44,0.191s,PASSED
+,,,,,,
+Test Cases/SpecificTab/IncreaseInsuranceBagsCouta/SearchForBakeryCodeByDirectorateEmployee,Chrome 77.0.3865.90,,2019-11-17 10:10:44,2019-11-17 10:10:44,0.444s,ERROR
+file = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 77.0.3865.90,,2019-11-17 10:10:44,2019-11-17 10:10:44,0.003s,PASSED
+BackeryCode = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 77.0.3865.90,,2019-11-17 10:10:44,2019-11-17 10:10:44,0.007s,PASSED
+file = new java.io.File(C:\Users\smart\Katalon Studio\BakeryManagementSystem.Share\Cash\GetBackeryCode.txt),Chrome 77.0.3865.90,,2019-11-17 10:10:44,2019-11-17 10:10:44,0.003s,PASSED
+BackeryCode = file.readLines(),Chrome 77.0.3865.90,,2019-11-17 10:10:44,2019-11-17 10:10:44,0.021s,ERROR
