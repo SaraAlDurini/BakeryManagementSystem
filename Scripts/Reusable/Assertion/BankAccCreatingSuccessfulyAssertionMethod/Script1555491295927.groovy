@@ -30,7 +30,7 @@ String ReqCode = SuccessfulMessage.replaceAll('[^\\d]', '')
 println(ReqCode)
 
 // Save the Req code in Cash 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ReqCode.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\ReqCode.txt')
 
 file.write(ReqCode)
 

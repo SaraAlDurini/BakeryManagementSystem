@@ -32,16 +32,16 @@ WebUI.click(findTestObject('BankAccDataField/Page_ (1)/li_ (DokkiBranch)'), Fail
 WebUI.click(findTestObject('BankAccDataField/Page_ (1)/div__ui-SelectBranch'))
 
 // acc numb , read it from cash , convert to string , Remove all punctuation marks 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccNumber.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\AccNumber.txt')
 FileText = file.readLines()
 WebUI.setText(findTestObject('CreateMdifyBankAcc/Page_/input_ _formj_idt37j_idt55'), file.readLines().toString().replaceAll("\\p{P}",""))
 
 //acc name , read it from cash , convert to string , Remove all punctuation marks 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccName.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\AccName.txt')
 WebUI.setText(findTestObject('BankAccDataField/Page_ (1)/input_ _formj_idt37j_idt57'), file.readLines().toString().replaceAll("\\p{P}",""))
 
 // NID Number, read it from cash , convert to string , Remove all punctuation marks 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\NIDNumber.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\NIDNumber.txt')
 
 WebUI.setText(findTestObject('BankAccDataField/Page_ (1)/input_   _formj_idt37j_idt59'),file.readLines().toString().replaceAll("\\p{P}",""))
 

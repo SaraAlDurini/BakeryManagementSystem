@@ -20,12 +20,12 @@ String ExpectedResult_BAKERY_CODE
 String ExpectedResult
 
 // Read BAKERY_CODE from Cash to execute the Query by this spesific code  
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryHaveBankAccount.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\BakeryHaveBankAccount.txt')
 ExpectedResult_BAKERY_CODE = file.readLines()
 println(ExpectedResult_BAKERY_CODE)
 
 // ** Read BANK_ACC_NUMBER Cash to execute the Query by this spesific code
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccNumber.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\AccNumber.txt')
 ExpectedResult = file.readLines()
 ExpectedResult = ExpectedResult.replaceAll("[^\\d]", "" )
 
@@ -36,7 +36,7 @@ Query = ((('Select BANK_ACC_NUMBER from bakery_ach_data where BAKERY_CODE = ' + 
 CustomKeywords.'dataBaseConnection.ExecuteOracleQueryWithExpectedResult.conectsql'('bdistribute', '12345678', Query, ExpectedResult)
 
 //  ** Read BAKERY_NAME Cash to execute the Query by this spesific code
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccName.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\AccName.txt')
 ExpectedResult = file.readLines()
 ExpectedResult = ExpectedResult.replaceAll("[^\\d]", "" )
 

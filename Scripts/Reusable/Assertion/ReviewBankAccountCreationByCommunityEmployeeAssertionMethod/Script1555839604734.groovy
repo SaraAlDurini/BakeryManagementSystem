@@ -33,7 +33,7 @@ println(SplitArrResult)
 //Get and assert on Actual Req Code
 String ActualReqCode = SplitArrResult[0]
 println(ActualReqCode)
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ReqCode.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\ReqCode.txt')
 FileData = file.readLines().toString().replaceAll("\\p{P}","")
 assert ActualReqCode.contains(FileData)
 
@@ -49,6 +49,6 @@ assert ActualCreationDate == today.format('dd/MM/yyyy')
 //Get and assert on Actual bakery Name
 String ActualbakeryName = SplitArrResult[2]
 println(ActualbakeryName)
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccName.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\AccName.txt')
 FileData =file.readLines().toString().replaceAll("\\p{P}","")
 assert ActualbakeryName.contains(FileData)

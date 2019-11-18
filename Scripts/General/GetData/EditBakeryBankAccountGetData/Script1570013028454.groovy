@@ -23,35 +23,35 @@ File file
 Query = ((((('Select * from base_bakery b inner join bakery_ach_data ach on b.BAKERY_CODE = ach.bakery_code  where b.governorate_code=03 and b.BAKERY_CODE not in(select BAKERY_CODE from REQ_BAKERY_ACH_DATA rbb,Requests r where rbb.REQ_CODE = r.REQ_CODE and r.REQ_CHANNEL=' + '\'') + 'BAKERY_ACC') + '\' and r.REQ_STATUS = ' + '\'') + 'FR_APRV') + '\'and r.APP_TYPE=1) ')
 println(Query)
 
-CustomKeywords.'dataBaseConnection.GetOracleQueryResult.conectsql'('bdistribute', '12345678', Query, 'C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryHaveBankAccount.txt')
+CustomKeywords.'dataBaseConnection.GetOracleQueryResult.conectsql'('bdistribute', '12345678', Query, 'C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\BakeryHaveBankAccount.txt')
 
 // read  User name from CSV then save it  in cash 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ValidUserName.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\ValidUserName.txt')
 
 file.write( findTestData('BakeryDataFileDirectorateAndCommodityEmployee').getValue(1, 1))
 
 // read  password from CSV then save it  in cash
 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\ValidPassword.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\ValidPassword.txt')
 
 file.write( findTestData('BakeryDataFileDirectorateAndCommodityEmployee').getValue(2, 1))
 
 
 // read  Acc number  from CSV then save it  in cash
 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccNumber.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\AccNumber.txt')
 
 file.write( findTestData('BakeryDataFileDirectorateAndCommodityEmployee').getValue(6, 1))
 
 // read  Acc Name  from CSV then save it  in cash
 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\AccName.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\AccName.txt')
 
 file.write( findTestData('BakeryDataFileDirectorateAndCommodityEmployee').getValue(7, 1))
 
 // read  NID Number  from CSV then save it  in cash
 
-file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\NIDNumber.txt')
+file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\NIDNumber.txt')
 file.write("28502063200094")
 // Or get it from CSV 
 //file.write( findTestData('BakeryDataFileDirectorateAndCommodityEmployee').getValue(8, 4))

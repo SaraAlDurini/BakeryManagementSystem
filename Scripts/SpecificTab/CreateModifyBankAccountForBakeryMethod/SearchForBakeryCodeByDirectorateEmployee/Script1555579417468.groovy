@@ -18,7 +18,7 @@ String BakeryHaveBankAccount
 
 
 // Get the Backary code from cash file 
- file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem.Share\\Cash\\BakeryHaveBankAccount.txt')
+ file = new File('C:\\Users\\smart\\Katalon Studio\\BakeryManagementSystem\\Cash\\BakeryDosenotHaveBankAccount.txt')
 BakeryHaveBankAccount = file.readLines()
 BakeryHaveBankAccount = BakeryHaveBankAccount.replaceAll('[^\\d]', '')
 

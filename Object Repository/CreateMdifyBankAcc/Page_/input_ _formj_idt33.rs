@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//input[@id='form:j_idt33']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id = 'form:j_idt33' and @name = 'form:j_idt34' and @type = 'text']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -24,14 +28,14 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>form:j_idt33</value>
+      <value>form:j_idt34</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>form:j_idt33</value>
+      <value>form:j_idt34</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
